@@ -129,16 +129,48 @@ public class While {
 		
         
 		// multiplication table
-		int num =1;
-		int i =5;
-		while(num<=10) {
-			System.out.println(i + "X"  +num  + "="  + i*num );
-			num ++;
-			
-			
-		}
+//		int num =1;
+//		int i =5;
+//		while(num<=10) {
+//			System.out.println(i + "X"  +num  + "="  + i*num );
+//			num ++;
+//			}
+
 		
+		// count number of digits it has
+//		Scanner s = new Scanner(System.in);
+//		System.out.println("enter your number");
+//		int i =s.nextInt();
+//		int count =0;
+//		int temp = Math.abs(i);
+//		if(temp ==0) {
+//			count =1;
+//		}
+//		else {
+//			while(temp!= 0) {
+//				temp = temp/10;
+//				count++;
+//			}
+//			}
+//		System.out.println("number of digits: "  +count);
+		
+		
+		// palindrome
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter your string");
+		int p =s.nextInt();
+		
+		int rev=0;
+	    while(p!=0){
+		int digit = p %10;
+		rev = rev*10 +digit;
+		p =p/10;
+		
+	    }
+		System.out.println(rev);		
+		
+	}
+	}
 
-	}}
-
+	
 
