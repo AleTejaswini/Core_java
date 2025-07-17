@@ -121,15 +121,50 @@ public class ArraysEx {
 		
 		
 		
-		// find all pairs with given sum
-		Set<Integer> seen = new HashSet<>();
-		int[] arr = {2, 4, 3, 5, 7, 8, 9};
-		int target =10;
-		for(int num: arr) {
-			if(seen.contains(target-num)) {
-				System.out.println(num + "," +(target-num));
+//		// find all pairs with given sum
+//		Set<Integer> seen = new HashSet<>();
+//		int[] arr = {2, 4, 3, 5, 7, 8, 9};
+//		int target =10;
+//		for(int num: arr) {
+//			if(seen.contains(target-num)) {
+//				System.out.println(num + "," +(target-num));
+//			}
+//			seen.add(num);
+//		}
+		
+		
+//		Print 2D array
+//		int[][] arr = {{1,2,3},{1,6,8},{5,8,9}};
+//		for(int i=0;i<arr.length;i++) { // arr.length
+//			for(int j=0;j<arr[i].length ;j++) { //arr[i].length
+//				System.out.print(arr[i][j] + " ");
+//			}
+//			System.out.println();	
+//			
+//			}
+		// transpose
+//		int[][] arr={{1,2,3},{1,6,8},{5,8,9}};
+//		for(int i=0;i<arr[0].length;i++) {        //arr[0].length
+//			for(int j=0;j<arr.length;j++) {       //arr[i].length
+//				System.out.print(arr[j][i] + " ");     //arr[j][i]
+//			}
+//			System.out.println();
+//		}
+//		
+		
+		//addition 
+		int[][] arr1={{1,2,3},{1,6,8},{5,8,9}};
+		int[][] arr2 = {{3,2,1} ,{5,8,6},{5,9,3}};
+		int[][] sum= new int[3][3];
+		for(int i=0;i<arr1.length;i++) {
+			for(int j=0;j<arr2.length;j++) {
+				
+				 sum[i][j] = arr1[i][j] + arr2[i][j]; // same for mul sub
+				 System.out.print(sum[i][j] +" ");
+				 
+				 
 			}
-			seen.add(num);
+			System.out.println();
 		}
 		
 	
