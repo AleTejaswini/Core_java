@@ -5,9 +5,9 @@ abstract class Gamedevelopment{
 	}
 	abstract void specialability();
 }
-class Wizard extends Gamedevelopment{
+ class Wizard extends Gamedevelopment{
 
-	@Override
+	 @Override
 	void specialability() {
 		System.out.println("Wizard uses Fireball");
 	}
