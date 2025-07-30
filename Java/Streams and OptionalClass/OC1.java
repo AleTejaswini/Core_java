@@ -5,7 +5,7 @@ import java.util.Optional;
 public class OC1 {
 
 	public static void main(String[] args) throws Exception {
-	Optional<String> name = Optional.of("Teja");
+	Optional<String> name = Optional.of("TejaRamalingam");
 	System.out.println(name);
 	//get() => Gets the value inside Optional.
 	System.out.println(name.get());
